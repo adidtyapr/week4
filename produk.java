@@ -4,7 +4,7 @@ public class produk {
     private String nama;
     String kategori;
     protected double harga;
-    public int stok;
+    private int stok;
 
     public produk(String nama, double harga, int stok, String kategori) {
         this.nama = nama;
@@ -12,7 +12,17 @@ public class produk {
         this.stok = stok;
         this.kategori = kategori;
     }
+    public String getNama(){
+         return nama;
+    }
+    public double getHarga(){
+        return harga;
+    }
+    public int getStok(){
+        return stok;
+    }
 
+    
     public void tampil info() {
         System.out.println("Produk : " + nama);
         System.out.println("Kategori : " + kategori);

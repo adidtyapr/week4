@@ -1,16 +1,14 @@
-
-import base.produk;
-
 public class main {
-
     public static void main(String[] args) {
-        produk p = new produk("Indomie Goreng", 3500, 100, "Makanan");
+        produk p = new produk("Baju", 10000.0, 5, "Uniqlo");
+    
 
-        System.out.println(p.stok);
-        System.out.println(p.harga);
-        System.out.println(p.kategori);
-        System.out.println(p.nama);
 
-        p.tampilInfo();
-    }
+        System.out.println(p.getNama());
+        System.out.println(p.getHarga());
+
+        p.setHarga(20000.0);
+        System.out.println(p.getHarga());
+    
+    };
 }
